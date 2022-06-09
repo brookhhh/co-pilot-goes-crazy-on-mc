@@ -2,7 +2,7 @@ from pymem import Pymem
 import os
 import subprocess
 
-# Make a DLL injector for Minecraft using Pymem
+# Make a DLL injector for Minecraft using Pymem (i added this line, i also added take some lines down below to make it work in theory 
 MC = subprocess.Popen('Minecraft.Bedrock.exe')
 
 pm = Pymem('Minecraft.Bedrock.exe')
