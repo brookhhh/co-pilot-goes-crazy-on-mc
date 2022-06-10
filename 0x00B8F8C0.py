@@ -11,7 +11,7 @@ def main():
     os.startfile("\\Program Files\\WindowsApps\\Microsoft.MinecraftUWP_1.19.5.0_x64__8wekyb3d8bbwe\\Minecraft.Windows.exe")
 
     # make it so the user can always jump
-    pm = pymem.Pymem("Minecraft.Bedrock.exe")
+    pm = pymem.Pymem("Minecraft.Windows.exe")
     pm.read_bytes(0x00B8F8C0, 1)
     pm.write_bytes(0x00B8F8C0, b'\x01')
     # print what you have just done
